@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animales S.O.S</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+		<nav>
+ 		 <div class="logo">
+            <img src="imagenes/logo.png" alt="logo" height="70%">
+           
+        </div>
+  		<a class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <h1>Tienda</h1>
+        <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="rescates.html">Albergue</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="donacion.html">Donacion </a>
+        <a href="contacto.html">Voluntario</a>
+    
+     </div>	
+ 	</nav>
+	</header>
+  <div class="text1"style="padding:3%;">
+     <p>
+        <div class="col-25-1">
+          <img src="imagenes/prod/1.jpg" height="350px" />
+        </div>
+        <div class="col-75-2">
+          <h2>Whiskas - Carne</h2>
+          <p >WHISKAS® ADULTO 1+ SABOR CARNE A partir del año La nueva receta de Whiskas® Adulto 1+ Sabor Carne le aportará a tu gato una nutrición 100% completa, balanceada y sabrosa. Es ideal para satisfacer las diferentes necesidades nutricionales a lo largo de toda su vida adulta:</p>
+          <p>CON VITAMINA A para una visión saludable</p>
+          <p>CON OMEGA 6 Y ZINC, ácidos grasos que ayudan a mantener su piel y pelo sanos</p>
+          <p>CON MINERALES CONTROLADOS que ayudan a mantener la salud de su tracto urinario</p>
+          <p>NUEVAS CROQUETAS con relleno húmedo y cremoso para satisfacer a su exigente paladar</p>
+          <p><a href="#popup6" onclick="total1()">Comprar:</a> <del>142.90 Bs</del> <strong>119.90 Bs</strong>&nbsp;&nbsp;&nbsp;
+            <b>Cantidad</b>&nbsp;&nbsp;
+            <input type="number" id="numeroA" min="1" value="1" style="width: 6em;"oninput="this.value = Math.abs(this.value)"></p>
+            <div id="popup6" class="overlay">
+                    <div class="popup">
+                        <h2>Costo Total</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Whiskas - Carne
+                            <br>
+                            Precio: 119,90 BS
+                            <br>
+                            <div style="float: left;">Cantidad:&nbsp;</div><div id="da1"></div>
+                            <h2>Total</h2>
+                            <center><h3><div id="resultado1"></div>&nbsp;Bs</h3></center>
+                            <label>Direccion: </label>
+                            <input type="text" name="clear" placeholder="Zona/Calle/N°">
+                            <label>Numero de Tarjeta</label>
+                            <input type="text" name="clear" placeholder="N°000000000" maxlength="99999999">
+                            <br><br>
+                            <label>Expira</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="00/00"maxlength="5">
+                            &nbsp;&nbsp;
+                            <label>CVC</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="000"maxlength="3">
+                            <br><br>
+                            <center><p><a type="btn" href="tienda.html" >Adquirir Producto</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                    <script> 
+                          function total1()
+                        {
+                          var a=parseInt(document.getElementById('numeroA').value);
+                          document.getElementById("da1").innerHTML =a
+                          var c=119.90*a;
+                          c = c.toFixed(2);
+                          document.getElementById("resultado1").innerHTML =c
+                        }
+                    </script>
+        </div>
+      </p>
+      <br>
+      <p>
+        <div class="col-25-1">
+          <img src="imagenes/prod/2.jpg" height="350px" />
+        </div>
+        <div class="col-75-2">
+          <h2>VITALCAN Balanced / Perro Adulto Cerdo y Arróz - 15 Kg.</h2>
+          <p >• Healthy Joints: Articulaciones saludables. Con glucosamina y metilsulfonilmetano, que ayudan a proteger el sistema osteoarticular del perro adulto, ya que promueven la regeneración y protección del cartílago articular..</p>
+          <p>• Digestive Protection: Los prebióticos favorecen el desarrollo de bacterias benéficas del intestino lo que contribuye a mejorar la absorción intestinal, lograr un proceso digestivo óptimo y aumentar la defensas naturales.</p>
+          <p>• Stress Relief: Modulador de stress. El cerdo es una fuente natural de L-triptofano, aminoácido esencial que ayuda a disminuir el stress y la ansiedad en perros que suelen provocarse lesiones en la piel.</p>
+          <p><a href="#popup7" onclick="tota2()">Comprar:</a> <strong>5879.45 Bs</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Cantidad</b>&nbsp;&nbsp;
+            <input type="number" id="numeroB" min="1" value="1" style="width: 6em;"oninput="this.value = Math.abs(this.value)"></p></p>
+            <div id="popup7" class="overlay">
+                    <div class="popup">
+                        <h2>Costo Total</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            VITALCAN Balanced
+                            <br>
+                            Precio: 5879.45 BS
+                            <br>
+                            <div style="float: left;">Cantidad:&nbsp;</div><div id="da2"></div>
+                            <h2>Total</h2>
+                            <center><h3><div id="resultado2"></div>&nbsp;Bs</h3></center>
+                            <label>Direccion: </label>
+                            <input type="text" name="clear" placeholder="Zona/Calle/N°">
+                            <label>Numero de Tarjeta</label>
+                            <input type="number" name="clear" placeholder="N°000000000"min="1"max="9999">
+                            <br><br>
+                            <label>Expira</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="00/00"maxlength="5">
+                            &nbsp;&nbsp;
+                            <label>CVC</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="000"maxlength="3">
+                            <br><br>
+                            <center><p><a type="btn" href="tienda.html" >Adquirir Producto</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                    <script> 
+                          function tota2()
+                        {
+                          var a=parseInt(document.getElementById('numeroB').value);
+                          document.getElementById("da2").innerHTML =a
+                          var c=5879.45*a;
+                          c = c.toFixed(2);
+                          document.getElementById("resultado2").innerHTML =c
+                        }
+                    </script>
+        </div>
+      </p>
+      <br>
+      <p>
+        <div class="col-25-1">
+          <img src="imagenes/prod/3.jpg" height="350px"/>
+        </div>
+        <div class="col-75-2">
+          <h2>PACHA COCKTAIL ADULTO X 22 KG</h2>
+          <p >Pachá Cocktail de Sabores es la nueva linea de alimentos elaborada con carnes, cereales y vegetales que combina un balance nutricional óptimo con los sabores preferidos de tu gato.</p>
+          <p>Pachá garantiza la calidad y frescura de sus productos pues los elabora con materias primas seleccionadas y procesadas bajo normas internacionales con la más alta tecnología.</p>
+          <p>Proteina bruta min 19%, grasa bruta min 7%, fibra cruda max 4%, minerales totales max 10%, calcio min 1% max 2%, fosforo min 0,06% max 1,2%, humedad max 12%.</p>
+          <p>minerales: cobre, hierro, zinc, yodo, magnesio, selenio. Minerales: zinc, hierro, cobre, yodo, magneso y selenio.</p>
+          <p><a href="#popup5" onclick="total()">Comprar:</a> <strong>178.520 Bs</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Cantidad</b>&nbsp;&nbsp;
+            <input type="number" id="numeroC" min="1" value="1" style="width: 6em;"oninput="this.value = Math.abs(this.value)"></p></p>
+            <div id="popup5" class="overlay">
+                    <div class="popup">
+                        <h2>Costo Total</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            PACHA COCKTAIL ADULTO X 22 KG
+                            <br>
+                            Precio: 178.520 BS
+                            <br>
+                            <div style="float: left;">Cantidad:&nbsp;</div><div id="da3"></div>
+                            <h2>Total</h2>
+                            <center><h3><div id="resultado3"></div>&nbsp;Bs</h3></center>
+                            <label>Direccion: </label>
+                            <input type="text" name="clear" placeholder="Zona/Calle/N°">
+                            <label>Numero de Tarjeta</label>
+                            <input type="number" name="clear" placeholder="N°000000000"min="1"max="9999">
+                            <br><br>
+                            <label>Expira</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="00/00"maxlength="5">
+                            &nbsp;&nbsp;
+                            <label>CVC</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="000"maxlength="3">
+                            <br><br>
+                            <center><p><a type="btn" href="tienda.html" >Adquirir Producto</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                    <script> 
+                          function total()
+                        {
+                          var a=parseInt(document.getElementById('numeroC').value);
+                          document.getElementById("da3").innerHTML =a
+                          var c=178.520*a;
+                          c = c.toFixed(2);
+                          document.getElementById("resultado3").innerHTML =c
+                          a=0
+                        }
+                    </script>
+        </div>
+      </p>
+      <br>
+      <p>
+        <div class="col-25-1">
+          <img src="imagenes/prod/4.jpg" height="400px" />
+        </div>
+        <div class="col-75-2">
+          <h2>Cat Chow Delimix - 15 Kg.</h2>
+          <p >El nuevo PURINA® CAT CHOW® ADULTOS DELIMIX CON DEFENSE PLUS ofrece los nutrientes que tu gato necesita para mantenerse fuerte y saludable. Contiene 3 fuentes de proteína, que ayudan a mantener su vitalidad.</p>
+          <p>VITAMINA A - Ayuda a mantener una visión saludable.</p>
+          <p>VITAMINA C - Ayuda a combatir los radicales libres.</p>
+          <p>VITAMINA E - Esencial para la respuesta inmune del organismo.</p>
+          <p>SELENIO - Actúa conjuntamente con la Viamina E como antioxidante celular.</p>
+          <p><a href="#popup8" onclick="total4()">Comprar:</a> <del>2673.75 Bs</del> <strong>2560.75 Bs</strong>&nbsp;&nbsp;&nbsp;
+            <b>Cantidad</b>&nbsp;&nbsp;
+            <input type="number" id="numeroD" min="1" value="1" style="width: 6em;"oninput="this.value = Math.abs(this.value)"></p></p>
+            <div id="popup8" class="overlay">
+                    <div class="popup">
+                        <h2>Costo Total</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Cat Chow Delimix
+                            <br>
+                            Precio: 2560.75 BS
+                            <br>
+                            <div style="float: left;">Cantidad:&nbsp;</div><div id="da4"></div>
+                            <h2>Total</h2>
+                            <center><h3><div id="resultado4"></div>&nbsp;Bs</h3></center>
+                            <label>Direccion: </label>
+                            <input type="text" name="clear" placeholder="Zona/Calle/N°">
+                            <label>Numero de Tarjeta</label>
+                            <input type="number" name="clear" placeholder="N°000000000"min="1"max="9999">
+                            <br><br>
+                            <label>Expira</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="00/00"maxlength="5">
+                            &nbsp;&nbsp;
+                            <label>CVC</label>
+                            <input type="text" name="" style="width: 6em;" placeholder="000"maxlength="3">
+                            <br><br>
+                            <center><p><a type="btn" href="tienda.html" >Adquirir Producto</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                    <script> 
+                          function total4()
+                        {
+                          var a=parseInt(document.getElementById('numeroD').value);
+                          document.getElementById("da4").innerHTML =a
+                          var c=2560.75*a;
+                          c = c.toFixed(2);
+                          document.getElementById("resultado4").innerHTML =c
+                          a=0
+                        }
+                    </script>
+        </div>
+      </p>
+</div>
+	<footer>
+    <div class="footer-social">
+      <a href="https://twitter.com/?lang=es" ><img src="imagenes/twi.png" height="40px"></a>
+      <a href="https://www.facebook.com//?lang=es" ><img src="imagenes/face.png" height="40px"></a>
+      <a href="https://www.instagram.com/?hl=es" ><img src="imagenes/ins.png" height="40px"></a>
+      <a href="https://api.whatsapp.com/send?phone=1234567&text=Hola%20Bienvenido%20a%20Animal%20S.O.S" ><img src="imagenes/wha.png" height="45px"></a>
+      <a href="tel:+123 147258369"><img src="imagenes/tel.png" height="40px"></a>
+      <div class="textf"> &copy;  Todos Los Derechos Reservados de Animal S.O.S </div></div>
+</footer>
+  <script type="text/javascript">
+        $(".btn").on("click", function(){
+            $('.menu').toggleClass("show");
+        });
+    </script>
+
+</body>
+</html>
